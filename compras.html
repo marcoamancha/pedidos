@@ -12,6 +12,7 @@
         <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css" rel="stylesheet" />
         <!-- Core theme CSS (includes Bootstrap)-->
         <link href="css/styles.css" rel="stylesheet" />
+        <link href="css/dataTables.bootstrap4.min.css" rel="stylesheet">
     </head>
     <body>
         <!-- Navigation-->
@@ -45,40 +46,103 @@
         </nav>
         <!-- Tabla -->
         <h1 class="text-center mt-4">Compras</h1>
-        <table class="table mb-5">
-            <thead>
-              <tr>
-                <th scope="col">#</th>
-                <th scope="col">N° de orden</th>
-                <th scope="col">Fecha</th>
-                <th scope="col">Cantidad</th>
-                <th scope="col">Detalle</th>
-              </tr>
-            </thead>
-            <tbody>
-              <tr>
-                <th scope="row">1</th>
-                <td>012345</td>
-                <td>21/02/2021</td>
-                <td>$ 10</td>
-                <td>VerS</td>
-              </tr>
-              <tr>
-                <th scope="row">2</th>
-                <td>Jacob</td>
-                <td>21/02/2021</td>
-                <td>$ 5</td>
-                <td>Ver</td>
-              </tr>
-              <tr>
-                <th scope="row">3</th>
-                <td>545353</td>
-                <td>21/02/2021</td>
-                <td>$ 5</td>
-                <td>Ver</td>
-              </tr>
-            </tbody>
-          </table>
+        <div class="container-fluid">
+          <div class="row">
+              <div class="col-12">
+                  <div class="card">
+                      <div class="card-body">
+                          <div class="table-responsive">
+                              <table class="table table-striped table-bordered zero-configuration">
+                                  <thead>
+                                      <tr>
+                                          <th>Numero de Orden</th>
+                                          <th>Fecha</th>
+                                          <th>Total</th>
+                                          <th>Detalle</th>                                         
+                                      </tr>
+                                  </thead>
+                                  <tbody>
+                                      <tr>
+                                          <td>123445</td>
+                                          <td>22/04/2021</td>
+                                          <td>$ 15</td>
+                                          <td>Ver factura</td>
+                                         
+                                      </tr>
+                                      <tr>
+                                          <td>343434</td>
+                                          <td>22/04/2021</td>
+                                          <td>$ 40</td>
+                                          <td>Ver factura</td>
+                                         
+                                      </tr>
+                                     
+                                      <tr>
+                                          <td>6543343</td>
+                                          <td>22/04/2021</td>
+                                          <td>$ 10</td>
+                                          <td>Ver factura</td>
+                                          
+                                      </tr>
+                                      <tr>
+                                          <td>523242</td>
+                                          <td>22/04/2021</td>
+                                          <td>$15</td>
+                                          <td>Ver factura</td>
+                                          
+                                      </tr>
+                                      <tr>
+                                          <td>75445</td>
+                                          <td>22/04/2021</td>
+                                          <td>$ 25</td>
+                                          <td>Ver factura</td>
+                                          
+                                      </tr>
+                                      <tr>
+                                          <td>6546465</td>
+                                          <td>22/04/2021</td>
+                                          <td>$ 10</td>
+                                          <td>Ver factura</td>
+                                          
+                                      </tr>
+                                      <tr>
+                                          <td>7657566</td>
+                                          <td>22/04/2021</td>
+                                          <td>$ 5</td>
+                                          <td>Ver factura</td>
+                                          
+                                      </tr>
+                                      <tr>
+                                          <td>65464645</td>
+                                          <td>22/04/2021</td>
+                                          <td>$ 20</td>
+                                          <td>Ver factura</td>
+                                          
+                                      </tr>
+                                    
+                                      <tr>
+                                          <td>3424234</td>
+                                          <td>22/04/2021</td>
+                                          <td>$ 10</td>
+                                          <td>Ver factura</td>
+                                         
+                                      </tr>
+                                  </tbody>
+                                  <tfoot>
+                                      <tr>
+                                        <th>Numero de Orden</th>
+                                        <th>Fecha</th>
+                                        <th>Total</th>
+                                        <th>Detalle</th>
+                                      </tr>
+                                  </tfoot>
+                              </table>
+                          </div>
+                      </div>
+                  </div>
+              </div>
+          </div>
+      </div>
         <!-- Footer-->
         <!-- <footer class="py-5 bg-dark mt-5">
             <div class="container"><p class="m-0 text-center text-white">Copyright &copy; Your Website 2021</p></div>
@@ -88,5 +152,8 @@
         <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/js/bootstrap.bundle.min.js"></script>
         <!-- Core theme JS-->
         <script src="js/scripts.js"></script>
+        <script src="js/jquery.dataTables.min.js"></script>
+        <script src="js/dataTables.bootstrap4.min.js"></script>
+        <script src="js/datatable-basic.min.js"></script>
     </body>
 </html>
