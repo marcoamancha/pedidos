@@ -47,8 +47,17 @@
                            'PRECIO'=>$PRECIO, 
                         );
                         $_SESSION['CARRITO'][0]=$producto;
+                        $mensaje = "Producto agregado al carrito";
 
                     }else{
+
+                        $idProductos = array_column($_SESSION['CARRITO'], "ID");
+
+                        if(in_array($ID, $idProductos)){
+                            $mensaje = "El producto ya fue agregado";
+                        } else{
+
+
                         $NumeroProductos=count($_SESSION['CARRITO']);
                         $producto=array(
                             'ID'=>$ID,
@@ -57,8 +66,11 @@
                             'PRECIO'=>$PRECIO, 
                          );
                          $_SESSION['CARRITO'][$NumeroProductos]=$producto;
+                         $mensaje = "Producto agregado al carrito";
                     }
-                    $mensaje=print_r($_SESSION,true);
+                }
+                    //$mensaje=print_r($_SESSION,true);
+                    
                 break;
 
                 case "Eliminar":                    
